@@ -3,6 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+    dataBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.sdsb8432.speechtotextdemo"
         minSdkVersion 16
@@ -26,4 +29,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.zcw:togglebutton-library:1.0.0'
 }
